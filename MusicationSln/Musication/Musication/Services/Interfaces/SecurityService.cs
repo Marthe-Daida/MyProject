@@ -102,7 +102,18 @@ namespace Musication.Services.Interfaces
             menuItem.MenuItemName = "Maps View";
             menuItem.NavigationPath = "NavigationPage/MapsView";
             menuItem.MenuOrder = 3;
-            menuItem.MenuType = MenuTypeEnum.Secured;
+            menuItem.MenuType = MenuTypeEnum.UnSecured;
+
+            _allMenuItems.Add(menuItem);
+
+            menuItem = new MenuItem();
+            menuItem.MenuItemId = 3;
+            menuItem.MenuItemName = "Pdf View";
+            menuItem.NavigationPath = "NavigationPage/ViewPdf";
+            menuItem.MenuOrder = 4;
+            menuItem.MenuType = MenuTypeEnum.UnSecured;
+
+            _allMenuItems.Add(menuItem);
 
         }
     }

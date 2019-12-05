@@ -1,12 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.appname">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.musication" android:installLocation="auto">
 	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
 	<uses-permission android:name="android.permission.INTERNET" />
-  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 	<application android:label="Musication.Android" android:icon="@mipmap/ic_launcher">
-    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyAb5M55ccjxeWi7UEMlcN7nmgOy_ta9IO4" />
-    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    <provider android:name="android.support.v4.content.FileProvider" android:authorities="com.companyname.musication.fileprovider" android:grantUriPermissions="true" android:exported="false">
+      <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths" />
+    </provider>
 
-  </application>
+    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyAb5M55ccjxeWi7UEMlcN7nmgOy_ta9IO4" />
+		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+	</application>
 </manifest>
