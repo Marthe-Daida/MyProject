@@ -83,7 +83,7 @@ namespace Musication.Services.Interfaces
             menuItem.NavigationPath = "NavigationPage/LoginView";
             menuItem.MenuType = MenuTypeEnum.Login;
             menuItem.MenuOrder = 1;
-
+            
 
             _allMenuItems.Add(menuItem);
 
@@ -93,7 +93,7 @@ namespace Musication.Services.Interfaces
             menuItem.NavigationPath = "";
             menuItem.MenuOrder = 99;
             menuItem.MenuType = MenuTypeEnum.LogOut;
-
+            
 
             _allMenuItems.Add(menuItem);
 
@@ -103,15 +103,17 @@ namespace Musication.Services.Interfaces
             menuItem.NavigationPath = "NavigationPage/MapsView";
             menuItem.MenuOrder = 3;
             menuItem.MenuType = MenuTypeEnum.UnSecured;
+            
 
             _allMenuItems.Add(menuItem);
 
             menuItem = new MenuItem();
             menuItem.MenuItemId = 3;
-            menuItem.MenuItemName = "Pdf View";
+            menuItem.MenuItemName = "Music Theory Book";
             menuItem.NavigationPath = "NavigationPage/ViewPdf";
             menuItem.MenuOrder = 4;
             menuItem.MenuType = MenuTypeEnum.UnSecured;
+            
 
             _allMenuItems.Add(menuItem);
 
