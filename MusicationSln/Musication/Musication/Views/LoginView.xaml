@@ -5,9 +5,29 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="Musication.Views.LoginView">
 
-<StackLayout>
-        <Label VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Text="Make your own Login Page" FontAttributes="Bold" FontSize="Large" />
-        <Button Text="Login" VerticalOptions="EndAndExpand" Command="{Binding LoginCommand}" />
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Sign Up" Command="{Binding SignUpCommand}" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="StartAndExpand">
+            <Label Text="Username" />
+            <Entry x:Name="usernameEntry" Placeholder="username" />
+            <Label Text="Password" />
+            <Entry x:Name="passwordEntry" IsPassword="true" />
+            <Button Text="Login" Command="{Binding LoginCommand}" />
+            <Label x:Name="messageLabel" />
+        </StackLayout>
+        </ContentPage.Content>
 
-    </StackLayout>
+
+
+
+
+
+
+
+
+
+
+
 </ContentPage>
