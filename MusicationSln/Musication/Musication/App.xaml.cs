@@ -37,6 +37,6 @@ namespace Musication
             containerRegistry.RegisterForNavigation<LoginView, LoginViewViewModel>();
             containerRegistry.RegisterForNavigation<MainView, MainViewViewModel>();
             containerRegistry.RegisterForNavigation<ViewPdf, ViewPdfViewViewModel>();
-        }
+containerRegistry.RegisterForNavigation<SignUp, SignUpViewModel>();        }
     }
 }
