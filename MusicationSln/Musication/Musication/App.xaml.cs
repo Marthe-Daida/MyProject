@@ -30,6 +30,7 @@ namespace Musication
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterSingleton<ISecurityService, SecurityService>();
+            containerRegistry.RegisterSingleton<IContentPackage, ZipContentPackage>();
 
             containerRegistry.RegisterForNavigation<NavigationPage>();
          //   containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
@@ -37,6 +38,8 @@ namespace Musication
             containerRegistry.RegisterForNavigation<LoginView, LoginViewViewModel>();
             containerRegistry.RegisterForNavigation<MainView, MainViewViewModel>();
             containerRegistry.RegisterForNavigation<ViewPdf, ViewPdfViewViewModel>();
-containerRegistry.RegisterForNavigation<SignUp, SignUpViewModel>();        }
+            containerRegistry.RegisterForNavigation<SignUp, SignUpViewModel>(); 
+            containerRegistry.RegisterForNavigation<EmbeddedHtmlView, EmbeddedHtmlViewViewModel>();
+        }
     }
 }

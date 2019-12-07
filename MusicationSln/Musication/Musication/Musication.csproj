@@ -5,10 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="htmlzipfile\content.zip" />
     <None Remove="pdffile\freefeezelltheorybookvol1.pdf" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="htmlzipfile\content.zip" />
     <EmbeddedResource Include="pdffile\freefeezelltheorybookvol1.pdf" />
   </ItemGroup>
 
@@ -19,6 +21,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Views\EmbeddedHtmlView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\LoginView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

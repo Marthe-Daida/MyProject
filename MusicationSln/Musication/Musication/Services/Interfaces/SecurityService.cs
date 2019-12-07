@@ -121,6 +121,18 @@ namespace Musication.Services.Interfaces
 
             _allMenuItems.Add(menuItem);
 
+            menuItem = new MenuItem();
+            menuItem.MenuItemId = 5;
+            menuItem.MenuItemName = "About";
+            menuItem.NavigationPath = "NavigationPage/EmbeddedHtmlView";
+            menuItem.MenuOrder = 5;
+            menuItem.MenuType = MenuTypeEnum.UnSecured;
+            menuItem.ImageName = "theory.png";
+
+
+            _allMenuItems.Add(menuItem);
+
+
         }
     }
 }

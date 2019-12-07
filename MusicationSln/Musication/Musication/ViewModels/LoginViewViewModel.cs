@@ -20,6 +20,15 @@ namespace Musication.ViewModels
         public DelegateCommand LoginCommand =>
             _loginCommand ?? (_loginCommand = new DelegateCommand(ExecuteLoginCommand));
 
+        private DelegateCommand _signUpCommand;
+        public DelegateCommand SignUpCommand =>
+            _signUpCommand ?? (_signUpCommand = new DelegateCommand(ExecuteSignUpCommand));
+
+        void ExecuteSignUpCommand()
+        {
+            NavigationService.NavigateAsync("SignUp");
+        }
+
 
         public LoginViewViewModel(INavigationService navigation, ISecurityService securityService, IEventAggregator eventAggregator) : base(navigation)
         {
