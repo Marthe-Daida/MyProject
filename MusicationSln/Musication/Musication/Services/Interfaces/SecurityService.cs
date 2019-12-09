@@ -111,7 +111,7 @@ namespace Musication.Services.Interfaces
             _allMenuItems.Add(menuItem);
 
             menuItem = new MenuItem();
-            menuItem.MenuItemId = 3;
+            menuItem.MenuItemId = 4;
             menuItem.MenuItemName = "Music Theory Book";
             menuItem.NavigationPath = "NavigationPage/ViewPdf";
             menuItem.MenuOrder = 4;
@@ -132,6 +132,17 @@ namespace Musication.Services.Interfaces
 
             _allMenuItems.Add(menuItem);
 
+
+            menuItem = new MenuItem();
+            menuItem.MenuItemId = 6;
+            menuItem.MenuItemName = "have no idea what to call it";
+            menuItem.NavigationPath = "";
+            menuItem.MenuOrder = 6;
+            menuItem.MenuType = MenuTypeEnum.UnSecured;
+            menuItem.ImageName = "theory.png";
+
+
+            _allMenuItems.Add(menuItem);
 
         }
     }

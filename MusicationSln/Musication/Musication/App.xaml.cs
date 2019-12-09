@@ -40,6 +40,7 @@ namespace Musication
             containerRegistry.RegisterForNavigation<ViewPdf, ViewPdfViewViewModel>();
             containerRegistry.RegisterForNavigation<SignUp, SignUpViewModel>(); 
             containerRegistry.RegisterForNavigation<EmbeddedHtmlView, EmbeddedHtmlViewViewModel>();
+            containerRegistry.RegisterForNavigation<YoutubeView, YouTubeViewViewModel>();
         }
     }
 }

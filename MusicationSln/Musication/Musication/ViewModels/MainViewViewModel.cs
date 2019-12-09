@@ -10,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using Xamarin.Essentials;
 
 namespace Musication.ViewModels
 {
@@ -34,8 +35,24 @@ namespace Musication.ViewModels
             if (menu.MenuType == MenuTypeEnum.LogOut)
                 _securityService.LogOut();
             else
+            {
+                if (!string.IsNullOrEmpty(menu.NavigationPath))
                 await NavigationService.NavigateAsync(menu.NavigationPath);
+                else
+                {
+                    switch (menu.MenuItemId)
+                    {
+                        case 6:
 
+                            await Browser.OpenAsync("https://www.youtube.com/embed/JH8ekYJrFHs", BrowserLaunchMode.SystemPreferred);
+
+                            break;
+
+                    }
+
+
+                }
+            }
         }
 
         public MainViewViewModel(INavigationService navigationService, ISecurityService securityService, IEventAggregator eventAggregator)
