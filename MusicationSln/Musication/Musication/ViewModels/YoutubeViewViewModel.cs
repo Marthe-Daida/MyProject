@@ -35,7 +35,7 @@ namespace Musication.ViewModels
         {
             base.Initialize(parameters);
 
-            YouTubeUrl = "https://www.youtube.com/embed/JH8ekYJrFHs";
+            YouTubeUrl = "https://www.youtube.com/watch?v=kvGYl8SQBJ0";
         }
 
         public async Task OpenBrowser(Uri uri)

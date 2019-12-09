@@ -127,7 +127,7 @@ namespace Musication.Services.Interfaces
             menuItem.NavigationPath = "NavigationPage/EmbeddedHtmlView";
             menuItem.MenuOrder = 5;
             menuItem.MenuType = MenuTypeEnum.UnSecured;
-            menuItem.ImageName = "theory.png";
+            menuItem.ImageName = "";
 
 
             _allMenuItems.Add(menuItem);
@@ -135,11 +135,11 @@ namespace Musication.Services.Interfaces
 
             menuItem = new MenuItem();
             menuItem.MenuItemId = 6;
-            menuItem.MenuItemName = "have no idea what to call it";
+            menuItem.MenuItemName = "Youtube Viewer";
             menuItem.NavigationPath = "";
             menuItem.MenuOrder = 6;
             menuItem.MenuType = MenuTypeEnum.UnSecured;
-            menuItem.ImageName = "theory.png";
+            menuItem.ImageName = "video.png";
 
 
             _allMenuItems.Add(menuItem);

@@ -44,7 +44,7 @@ namespace Musication.ViewModels
                     {
                         case 6:
 
-                            await Browser.OpenAsync("https://www.youtube.com/embed/JH8ekYJrFHs", BrowserLaunchMode.SystemPreferred);
+                            await Browser.OpenAsync("https://www.youtube.com/watch?v=kvGYl8SQBJ0&pbjreload=10", BrowserLaunchMode.SystemPreferred);
 
                             break;
 
