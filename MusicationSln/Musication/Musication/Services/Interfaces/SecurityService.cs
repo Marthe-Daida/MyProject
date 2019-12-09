@@ -127,7 +127,7 @@ namespace Musication.Services.Interfaces
             menuItem.NavigationPath = "NavigationPage/EmbeddedHtmlView";
             menuItem.MenuOrder = 5;
             menuItem.MenuType = MenuTypeEnum.UnSecured;
-            menuItem.ImageName = "";
+            menuItem.ImageName = "about.png";
 
 
             _allMenuItems.Add(menuItem);

@@ -7,8 +7,32 @@
     
     <ContentPage.Content>
         <StackLayout VerticalOptions="StartAndExpand">
-            <Label Text="Username" />
-            <Entry x:Name="usernameEntry" Placeholder="username" />
+            
+            <Entry x:Name="FullNameEntry" Placeholder="FullName" />
+            <Entry x:Name="SurnameEntry" Placeholder="Surname" />
+          
+
+             <Label Text="Picker"
+               FontSize="50"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+            <Picker Title="Color"
+                VerticalOptions="CenterAndExpand"
+                Margin="10, 0"
+                SelectedIndexChanged="OnPickerSelectedIndexChanged">
+                <Picker.Items>
+                    <x:String>Female</x:String>
+                    <x:String>Male</x:String>
+                   </Picker.Items>
+            </Picker>
+
+            <BoxView x:Name="boxView"
+                 WidthRequest="150"
+                 HeightRequest="150"
+                 HorizontalOptions="Center"
+                 VerticalOptions="CenterAndExpand" />
+
             <Label Text="Password" />
             <Entry x:Name="passwordEntry" IsPassword="true" />
             <Label Text="Email address" />
