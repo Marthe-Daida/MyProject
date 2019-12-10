@@ -1,16 +1,22 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
+using Prism.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace Musication.ViewModels
 {
-    public class SignUpViewModel : BindableBase
+    public class SignUpViewModel : ViewModelBase
     {
-        public SignUpViewModel()
+        public SignUpViewModel(INavigationService navigationService) :base(navigationService)
         {
 
         }
+       
+        }
+
+
     }
-}
+    
+

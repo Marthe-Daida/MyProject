@@ -22,7 +22,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Views\EmbeddedHtmlView.xaml">
+    <Compile Update="Views\MusicationHtmlView.xaml.cs">
+      <DependentUpon>MusicationHtmlView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\MusicationHtmlView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\LoginView.xaml">

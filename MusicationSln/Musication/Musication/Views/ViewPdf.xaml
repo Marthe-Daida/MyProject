@@ -6,8 +6,13 @@
              x:Class="Musication.Views.ViewPdf">
     <StackLayout>
 
-        <Button Text="Open Embedded PDF" Command="{Binding OpenPdfCommand}"/>
-        
+        <Image Source="logo.jpg"
+                 WidthRequest="500"
+                 HeightRequest="500" />
+
+
+        <Button Text="Open Music Theory Book" Command="{Binding OpenPdfCommand}" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand"/>
+
 
 
     </StackLayout>

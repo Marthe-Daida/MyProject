@@ -4,43 +4,26 @@
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="Musication.Views.SignUp">
-    
-    <ContentPage.Content>
-        <StackLayout VerticalOptions="StartAndExpand">
-            
-            <Entry x:Name="FullNameEntry" Placeholder="FullName" />
-            <Entry x:Name="SurnameEntry" Placeholder="Surname" />
-          
 
-             <Label Text="Picker"
-               FontSize="50"
-               FontAttributes="Bold"
-               HorizontalOptions="Center" />
-
-            <Picker Title="Color"
-                VerticalOptions="CenterAndExpand"
-                Margin="10, 0"
-                SelectedIndexChanged="OnPickerSelectedIndexChanged">
-                <Picker.Items>
-                    <x:String>Female</x:String>
-                    <x:String>Male</x:String>
-                   </Picker.Items>
-            </Picker>
-
-            <BoxView x:Name="boxView"
-                 WidthRequest="150"
-                 HeightRequest="150"
-                 HorizontalOptions="Center"
-                 VerticalOptions="CenterAndExpand" />
-
-            <Label Text="Password" />
-            <Entry x:Name="passwordEntry" IsPassword="true" />
-            <Label Text="Email address" />
-            <Entry x:Name="emailEntry" />
-            <Button Text="Sign Up" Command="{Binding SignUp Command}" />
-            <Label x:Name="messageLabel" />
+    <StackLayout Margin="0" VerticalOptions="StartAndExpand">
+        <StackLayout>
+            <Label Text="Full Name" FontSize="Large"/>
+            <Entry Text="{Binding FullName}" />
+            <Label Text="Gender" FontSize="Large" />
+            <Entry Text="{Binding Gender}" />
+            <Label Text="Username" FontSize="Large" />
+            <Entry Text="{Binding Username}" />
+            <Label Text="Password" FontSize="Large" />
+            <Entry Text="{Binding Password}" />
+            <Label Text="Re-Type Password" FontSize="Large" />
+            <Entry Text="{Binding Re-TypePassword}"/>
         </StackLayout>
-    </ContentPage.Content>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center"></StackLayout>
+        <Button Text="SignUp" Command="{Binding ToSignUpCommand}" CornerRadius="30" BackgroundColor="Gray"/>
+    </StackLayout>
+
+
+
 
 
 
