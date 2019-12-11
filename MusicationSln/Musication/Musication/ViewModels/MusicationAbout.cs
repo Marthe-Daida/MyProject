@@ -10,7 +10,7 @@ using System.Reflection;
 
 namespace Musication.ViewModels
 {
-    public class EmbeddedHtmlViewViewModel : ViewModelBase
+    public class MusicationAbout : ViewModelBase
     {
         private string _basePath;
         private IContentPackage _contentPackage;
@@ -25,7 +25,7 @@ namespace Musication.ViewModels
             }
         }
 
-        public EmbeddedHtmlViewViewModel(INavigationService navigationService, IContentPackage package) : base(navigationService)
+        public MusicationAbout(INavigationService navigationService, IContentPackage package) : base(navigationService)
         {
             _basePath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
 

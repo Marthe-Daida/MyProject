@@ -5,29 +5,27 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="Musication.Views.LoginView">
 
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Sign Up" Command="{Binding SignUpCommand}" />
-    </ContentPage.ToolbarItems>
-    <ContentPage.Content>
-        <StackLayout VerticalOptions="StartAndExpand">
-            <Label Text="Username" />
-            <Entry x:Name="usernameEntry" Placeholder="username" />
-            <Label Text="Password" />
-            <Entry x:Name="passwordEntry" IsPassword="true" />
-            <Button Text="Login" Command="{Binding LoginCommand}" />
+    <StackLayout Margin="0" VerticalOptions="StartAndExpand">
+        <StackLayout>
+            <Label Text="Username" FontSize="Large" />
+            <Entry Text="{Binding Username}"/>
+            <Label Text="Password"  FontSize="Large"/>
+            <Entry  Text="{Binding Password}"/>
+            <Button Text="Login" Command="{Binding LoginCommand}"  CornerRadius="30" BackgroundColor="Gray"/>
+            <Button Text="SignUp" Command="{Binding SignUpCommand}"  CornerRadius="30" BackgroundColor="Gray"/>
             <Label x:Name="messageLabel" />
         </StackLayout>
-        </ContentPage.Content>
-
-
-
-
-
-
-
-
-
-
-
-
+    </StackLayout>
 </ContentPage>
+
+
+
+
+
+
+
+
+
+
+
+

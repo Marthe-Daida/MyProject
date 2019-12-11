@@ -24,7 +24,7 @@ namespace Musication
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync("MainView/NavigationPage/MapsView");
+            await NavigationService.NavigateAsync("MainView/NavigationPage/LoginView");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -39,7 +39,7 @@ namespace Musication
             containerRegistry.RegisterForNavigation<MainView, MainViewViewModel>();
             containerRegistry.RegisterForNavigation<ViewPdf, ViewPdfViewViewModel>();
             containerRegistry.RegisterForNavigation<SignUp, SignUpViewModel>(); 
-            containerRegistry.RegisterForNavigation<EmbeddedHtmlView, EmbeddedHtmlViewViewModel>();
+            containerRegistry.RegisterForNavigation<EmbeddedHtmlView, MusicationAbout>();
             containerRegistry.RegisterForNavigation<YoutubeView, YouTubeViewViewModel>();
         }
     }

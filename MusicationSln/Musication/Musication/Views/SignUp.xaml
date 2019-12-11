@@ -5,22 +5,24 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="Musication.Views.SignUp">
 
-    <StackLayout Margin="0" VerticalOptions="StartAndExpand">
-        <StackLayout>
-            <Label Text="Full Name" FontSize="Large"/>
-            <Entry Text="{Binding FullName}" />
-            <Label Text="Gender" FontSize="Large" />
-            <Entry Text="{Binding Gender}" />
-            <Label Text="Username" FontSize="Large" />
-            <Entry Text="{Binding Username}" />
-            <Label Text="Password" FontSize="Large" />
-            <Entry Text="{Binding Password}" />
-            <Label Text="Re-Type Password" FontSize="Large" />
-            <Entry Text="{Binding Re-TypePassword}"/>
-        </StackLayout>
-        <StackLayout VerticalOptions="Center" HorizontalOptions="Center"></StackLayout>
-        <Button Text="SignUp" Command="{Binding ToSignUpCommand}" CornerRadius="30" BackgroundColor="Gray"/>
+
+
+    <StackLayout>
+        <Label Text="Full Name" FontSize="Large"/>
+        <Entry Text="{Binding User.Fullname}" />
+        <Label Text="Gender" FontSize="Large" />
+        <Entry Text="{Binding  User.Gender}" />
+        <Label Text="Username" FontSize="Large" />
+        <Entry Text="{Binding  User.Username}" />
+        <Label Text="Password" FontSize="Large" />
+        <Entry Text="{Binding  User.Password}" />
+        <Label Text="Re-Type Password" FontSize="Large" />
+        <Entry Text="{Binding  User.ConfirmPassword}"/>
+    
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center"></StackLayout>
+    <Button Text="SignUp" Command="{Binding ToSignUpCommand}" CornerRadius="30" BackgroundColor="Gray"/>
     </StackLayout>
+
 
 
 

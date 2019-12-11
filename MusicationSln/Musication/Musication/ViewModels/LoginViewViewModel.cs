@@ -20,9 +20,9 @@ namespace Musication.ViewModels
         public DelegateCommand LoginCommand =>
             _loginCommand ?? (_loginCommand = new DelegateCommand(ExecuteLoginCommand));
 
-        private DelegateCommand _signUpCommand;
+        private DelegateCommand _signupCommand;
         public DelegateCommand SignUpCommand =>
-            _signUpCommand ?? (_signUpCommand = new DelegateCommand(ExecuteSignUpCommand));
+            _signupCommand ?? (_signupCommand = new DelegateCommand(ExecuteSignUpCommand));
 
         void ExecuteSignUpCommand()
         {
@@ -49,6 +49,7 @@ namespace Musication.ViewModels
             {
                 _eventAggregator.GetEvent<LoginMessage>().Publish(userProfile);
             }
+
         }
 
     }
