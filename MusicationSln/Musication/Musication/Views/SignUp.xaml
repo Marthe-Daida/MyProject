@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="Musication.Views.SignUp">
+             x:Class="Musication.Views.SignUp" BackgroundColor="Yellow">
 
 
 
@@ -20,7 +20,7 @@
         <Entry Text="{Binding  User.ConfirmPassword}"/>
     
     <StackLayout VerticalOptions="Center" HorizontalOptions="Center"></StackLayout>
-    <Button Text="SignUp" Command="{Binding ToSignUpCommand}" CornerRadius="30" BackgroundColor="Gray"/>
+    <Button Text="SignUp" Command="{Binding ToSignUpCommand}" CornerRadius="30" BackgroundColor="OrangeRed"/>
     </StackLayout>
 
 

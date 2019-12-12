@@ -3,15 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="Musication.Views.ViewPdf  ">
+             x:Class="Musication.Views.ViewPdf" BackgroundImageSource="logo.png">
     
     
     <StackLayout>
-        <Image Source="logo.jpg"
-                 WidthRequest="500"
-                 HeightRequest="500" />
+       
         <Button Text="Open Music Theory Book" Command="{Binding OpenPdfCommand}"
-        HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand"
+        VerticalOptions="EndAndExpand"
         BackgroundColor="OrangeRed" />
     </StackLayout>
 
