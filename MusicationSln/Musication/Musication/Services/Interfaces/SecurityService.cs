@@ -141,8 +141,21 @@ namespace Musication.Services.Interfaces
             menuItem.MenuType = MenuTypeEnum.UnSecured;
             menuItem.ImageName = "video.png";
 
+            _allMenuItems.Add(menuItem);
+
+            menuItem = new MenuItem();
+            menuItem.MenuItemId = 7;
+            menuItem.MenuItemName = "Resources";
+            menuItem.NavigationPath = "NavigationPage/ViewResources";
+            menuItem.MenuOrder = 7;
+            menuItem.MenuType = MenuTypeEnum.UnSecured;
+            menuItem.ImageName = "Res.png";
 
             _allMenuItems.Add(menuItem);
+
+            
+
+
 
         }
     }

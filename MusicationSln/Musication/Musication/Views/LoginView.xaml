@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="Musication.Views.LoginView">
+             x:Class="Musication.Views.LoginView " BackgroundColor="Red">
 
     <StackLayout Margin="0" VerticalOptions="StartAndExpand">
         <StackLayout>
@@ -11,8 +11,8 @@
             <Entry Text="{Binding Username}"/>
             <Label Text="Password"  FontSize="Large"/>
             <Entry  Text="{Binding Password}"/>
-            <Button Text="Login" Command="{Binding LoginCommand}"  CornerRadius="30" BackgroundColor="Gray"/>
-            <Button Text="SignUp" Command="{Binding SignUpCommand}"  CornerRadius="30" BackgroundColor="Gray"/>
+            <Button Text="Login" Command="{Binding LoginCommand}"  CornerRadius="30" BackgroundColor="Yellow"/>
+            <Button Text="SignUp" Command="{Binding SignUpCommand}"  CornerRadius="30" BackgroundColor="Yellow"/>
             <Label x:Name="messageLabel" />
         </StackLayout>
     </StackLayout>
